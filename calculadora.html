@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora MRUV</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="panel">
+   <h2>Simulador de MRUV</h2>
+
+Velocidad inicial (m/s):
+<input type="number" id="v0"><br>
+
+Velocidad final (m/s):
+<input type="number" id="vf"><br>
+
+Aceleración (m/s²):
+<input type="number" id="a"><br>
+
+Distancia (m):
+<input type="number" id="d"><br>
+
+Tiempo total (s):
+<input type="number" id="tiempo"><br>
+
+<button onclick="iniciar()">Iniciar simulación</button>
+<button onclick="limpiar()">Limpiar campos</button>
+
+<p id="resultado"></p>
+</div>
+
+
+<div id="escenario">
+    <div id="objeto"></div>
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
